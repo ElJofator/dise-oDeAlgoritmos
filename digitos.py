@@ -4,6 +4,8 @@ from os import system
 system("clear")
 
 numero = input("Ingrese un número: ")
+if(numero[0] in "-+"):
+    numero = numero[1:]
 if(numero.isnumeric()):
     print(f"El número tiene {len(numero)} dígitos")
 else:
