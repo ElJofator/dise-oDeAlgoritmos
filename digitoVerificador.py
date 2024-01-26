@@ -32,6 +32,7 @@ if(numero.isnumeric()):
         else:
             cont = 0
     residuo = suma % 11
-    print(f"El dígito verificador es: {numero}-{11-residuo}")
+    digito = int(numero)+residuo-11
+    print(f"El dígito verificador es: {digito}")
 else:
     print("No es un número válido")
