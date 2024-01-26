@@ -11,19 +11,19 @@
 
 from os import system
 
-def validar(numero):                            #Recibe el número como string
+def validar(numero): #Recibe el número como string
     cantidad = len(numero)
-    if(numero[0] == "-" or numero[0] == "+"):   #Retira el signo si comienza con uno 
+    if(numero[0] == "-" or numero[0] == "+"): #Retira el signo si comienza con uno 
         numero = numero[1:]
         cantidad -= 1
     if(cantidad > 0):
         digitos = "0123456789"
-        punto = False                           #Bandera que verifica si el número tiene punto
+        punto = False #Bandera que verifica si el número tiene punto
         for i in range(cantidad):
-            if(numero[i] in digitos):        #Compara cada caracter con los dígitos del 0 al 9
+            if(numero[i] in digitos): #Compara cada caracter con los dígitos del 0 al 9
                 continue
-            elif(numero[i] == "." and i > 0):     #Busca si el caracter actual es un punto
-                if(not punto):                  #Verifica que el número no tenga más de un punto
+            elif(numero[i] == "." and i > 0): #Busca si el caracter actual es un punto
+                if(not punto): #Verifica que el número no tenga más de un punto
                     punto = True
                 else:
                     return False
