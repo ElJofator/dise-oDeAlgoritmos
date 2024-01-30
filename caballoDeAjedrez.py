@@ -1,3 +1,8 @@
+#Escriba un programa que reciba como entrada las coordenadas en que se encuentra un caballo, y entregue como salida todas las casillas hacia las cuales el caballo puede desplazarse.
+
+# Todas las coordenadas mostradas deben estar dentro del tablero.
+
+# Si la coordenada ingresada por el usuario es inválida, el programa debe indicarlo.
 print("Ingrese las coordenadas del caballo.")
 fila = ""
 while(not fila.isnumeric()):
