@@ -1,11 +1,4 @@
-def esPrimo(num):
-    if(num >= 2):
-        for i in range(2, int(num**0.5) + 1):
-            if(num%i == 0):
-                return False
-        return True
-    else:
-        return False
+from modules.validate import esPrimo
 
 #Escriba un programa que reciba como entrada un número natural, e indique si es primo o compuesto:
 def primo():
